@@ -35,7 +35,7 @@ public class ifSwitchLoops {
         int c = 0;
         do {
             c += b;
-            b +=2;
+            b += 2;
         } while (b < 55);
         System.out.println("Сумма чётных чисел =" + c);
 
