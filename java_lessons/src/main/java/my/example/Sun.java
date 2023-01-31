@@ -1,12 +1,30 @@
 package my.example;
 
 public class Sun {
-     public static void Rassvet() {
-     for (int i=0; i<366; i++) {
-         System.out.println("Рассвет№:" + " " + i);
-     }
- }
     public static void main(String[] args) {
-        Rassvet();
+        Sunset one = new Sunset();
+        one.sunset();
+        one.sunset();
+        one.sunset();
+        one.displayInfo();
     }
 }
+
+class Sunset {
+    static int counter = 0;
+
+    public void sunset() {
+        counter += 1;
+    }
+
+
+
+    public void displayInfo() {
+        System.out.println(counter);
+
+    }
+}
+
+
+
+
