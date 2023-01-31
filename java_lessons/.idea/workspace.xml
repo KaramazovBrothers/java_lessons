@@ -52,7 +52,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -93,6 +94,9 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ifSwitchLoops" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ifSwitchLoops" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ifSwitchLoops" />
       </list>
     </recent_temporary>
   </component>
