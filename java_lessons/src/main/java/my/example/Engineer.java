@@ -1,5 +1,7 @@
 package my.example;
 
+import java.util.Objects;
+
 public class Engineer {
     String name;
     String lastName;
@@ -13,7 +15,7 @@ public class Engineer {
         this.salary = salary;
     }
 
-    public void displayInfo () {
+   protected void displayInfo () {
         System.out.println("Engineer`s name:" + name + "\nLast_name:" + lastName + "\nFunction:" + function + "\nSalary:" + salary);
     }
 
@@ -31,5 +33,18 @@ public class Engineer {
 
     public int getSalary() {
         return salary;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Engineer engineer)) return false;
+        return getSalary() == engineer.getSalary() && getName().equals(engineer.getName()) && getLastName().equals(engineer.getLastName()) && getFunction().equals(engineer.getFunction());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getLastName(), getFunction(), getSalary());
     }
 }
