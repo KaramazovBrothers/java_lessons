@@ -1,6 +1,6 @@
 package my.example;
 
-public class Parrot extends Animal{
+public class Parrot extends Animal {
     private String name;
 
     public Parrot(String location, String food, String name) {
@@ -11,10 +11,12 @@ public class Parrot extends Animal{
     public String getName() {
         return name;
     }
+
     @Override
     public void makeNoise() {
         System.out.println("Чирикает");
     }
+
     public void makeNoise(String noise) {
         System.out.println(noise);
     }
@@ -23,14 +25,17 @@ public class Parrot extends Animal{
     public void eat() {
         System.out.println("Растительноядное");
     }
+
     @Override
     public String getLocation() {
         return location;
     }
+
     @Override
     public String getFood() {
         return food;
     }
+
     @Override
     public String toString() {
         return location + "/" + food;
