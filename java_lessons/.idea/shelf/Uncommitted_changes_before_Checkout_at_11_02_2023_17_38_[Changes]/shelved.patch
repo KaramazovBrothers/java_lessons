@@ -1,0 +1,26 @@
+Index: src/main/java/my/example/SetDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package my.example;\r\n\r\nimport java.util.*;\r\n\r\npublic class SetDemo {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        HashMap<String, Integer> film = new HashMap<String, Integer>();\r\n        film.put(\"The Shawshank Redemption\", 9);\r\n        film.put(\"The Green Mil\", 9);\r\n        film.put(\"Schindler's List\", 8);\r\n        film.put(\"The Matrix\", 7);\r\n\r\n        for (Map.Entry<String, Integer> item : film.entrySet()) {\r\n            String name = item.getKey();\r\n            Integer rait = item.getValue();\r\n            System.out.println(name + \" \" + rait);\r\n        }\r\n        System.out.println();\r\n\r\n        for (String name : film.keySet()) {\r\n            Integer rait = film.get(name);\r\n            System.out.println(name + \" \" + rait);\r\n        }\r\n        System.out.println();\r\n\r\n        for (Integer i : film.values()) {\r\n            System.out.println(i);\r\n        }\r\n        System.out.println();\r\n\r\n        List<String> number = new ArrayList<>();\r\n        number.add(\"1\");\r\n        number.add(\"2\");\r\n        number.add(\"3\");\r\n        number.add(\"4\");\r\n        number.add(\"4\");\r\n        number.add(\"5\");\r\n        Set<String> ybiraemPovtor = new LinkedHashSet<String>(number);\r\n        System.out.println(ybiraemPovtor);\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/my/example/SetDemo.java b/src/main/java/my/example/SetDemo.java
+--- a/src/main/java/my/example/SetDemo.java	
++++ b/src/main/java/my/example/SetDemo.java	
+@@ -12,11 +12,17 @@
+         film.put("Schindler's List", 8);
+         film.put("The Matrix", 7);
+ 
++        public static <Str> void hashMap (Map.Entry <String, Integer> film) {
++
++        }
++
++
+         for (Map.Entry<String, Integer> item : film.entrySet()) {
+             String name = item.getKey();
+             Integer rait = item.getValue();
+             System.out.println(name + " " + rait);
+         }
++
+         System.out.println();
+ 
+         for (String name : film.keySet()) {
