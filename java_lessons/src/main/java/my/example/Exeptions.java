@@ -10,7 +10,7 @@ public class Exeptions {
             String s = reader.readLine();
             reader.close();
         } catch (IOException e) {
-            throw new IOException(e);
+            e.printStackTrace();
         } finally {
             System.out.println("Solve this problem");
         }
