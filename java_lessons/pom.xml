@@ -18,4 +18,15 @@
         <artifactId>selenide</artifactId>
         <version>6.11.0</version>
     </dependency>
+    <dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>1.0.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok-maven-plugin</artifactId>
+        <version>1.18.20.0</version>
+        <scope>provided</scope>
+    </dependency>
 </project>
