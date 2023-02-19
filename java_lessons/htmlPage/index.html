@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="welcome" name="welcome">Welcome, Stranger</h1>
+<h2 id="name" name="name">My name is Ktulhu</h2>
+<p>Please, see table with my travel plans</p>
+<table style="width:30%" id="table" name="table">
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>Germany</td>
+        <td>Drezden</td>
+    </tr>
+    <tr>
+        <td>Hungary</td>
+        <td>Budapest</td>
+    </tr>
+</table>
+<h3 id="selectGroup" name="selectGroup"> Select group
+    <select name="list" id="list">
+    <option value="1">Nizkiz</option>
+    <option value="2">Rammstein</option>
+    <option value="3">System of a Down</option>
+</select></h3>
+<h4>
+    <form>
+        <input id="checkbox1" type="checkbox" name="checkbox1">
+        <label for="checkbox1">Left-Hended</label>
+    </form>
+    <form>
+        <input id="checkbox2" type="checkbox" name="checkbox2">
+        <label for="checkbox2">Right-Hended</label>
+    </form>
+</h4>
+<div class="href">
+<a href="https://www.w3schools.com"  id="href" name="href">Visit W3Schools.com!</a>
+</div>
+<div class="divButton">
+    <button class="button button1" type="button" onclick="alert" id="button" name="button">Click Me!</button>
+</div>
+<script>
+    document.querySelector("#button").onclick = function(){
+  alert("Вы нажали на кнопку");
+}
+</script>
+<p>
+<img src="https://www.shutterstock.com/image-illustration/ancient-sea-octopus-monster-many-600w-2133587869.jpg"
+     alt="oops, you found it" id="imgKtulhu" name="imgKtulhu">
+</p>
+</body>
+</html>
