@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c4527ef-72ca-4903-9cfd-3d608772c1b7" name="Changes" comment="dataType">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/example/Exeptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/example/Exeptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Locators/locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locators/locators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <recent name="my.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CalcTest">
+  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.example.Main" />
       <module name="java_lessons" />
@@ -92,19 +92,6 @@
     </configuration>
     <configuration name="SetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.example.SetDemo" />
-      <module name="java_lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ifSwitchLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.example.ifSwitchLoops" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
@@ -137,13 +124,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenide_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenide_test" />
+      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.CalcTest" />
         <item itemvalue="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smoke.xml" />
         <item itemvalue="Application.SetDemo" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ifSwitchLoops" />
       </list>
     </recent_temporary>
   </component>
