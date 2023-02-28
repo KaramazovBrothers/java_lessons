@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest {
         $(By.id("login-button")).click();
         $(By.id("add-to-cart-sauce-labs-backpack")).click();
         $x("//a[@class='shopping_cart_link']").click();
-        SelenideElement productLink = $x("//a[@id=\"item_4_title_link\"]").shouldBe(Condition.visible);
+        SelenideElement productLink = $x("//a[@id='item_4_title_link']").shouldBe(Condition.visible);
         Assert.isTrue(productLink.isDisplayed(),String.format("Element  %s isn`t displayed", productLink.getText()));
     }
 }
