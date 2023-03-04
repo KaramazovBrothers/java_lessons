@@ -1,25 +1,78 @@
 package selenide_test;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
+import Steps.LoginPageSteps;
 import dev.failsafe.internal.util.Assert;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
-import static com.codeborne.selenide.Selenide.*;
-import static selenide_test.WebUrls.LOGIN_URL;
+import pages.CheckoutPage;
+import pages.LoginPage;
+import pages.ProductsPage;
 
 public class LoginTest extends BaseTest {
 
-    @Test
-    public void loginTest() {
-        open(LOGIN_URL);
-        $(By.id("user-name")).sendKeys("standard_user");
-        $(By.id("password")).sendKeys("secret_sauce");
-        $(By.id("login-button")).click();
-        $(By.id("add-to-cart-sauce-labs-backpack")).click();
-        $x("//a[@class='shopping_cart_link']").click();
-        SelenideElement productLink = $x("//a[@id='item_4_title_link']").shouldBe(Condition.visible);
-        Assert.isTrue(productLink.isDisplayed(),String.format("Element  %s isn`t displayed", productLink.getText()));
+    @Test //Рефактор предыдущего теста с проверкой добавления товара в корзину
+    public void BackpackInCheckout() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickAddToCardBackpack();
+        productsPage.ClickToLinkCheckout();
+        CheckoutPage checkoutPage = new CheckoutPage();
+        Assert.isTrue(checkoutPage.checkBackPackInCheckout(), "Backpack not found in checkout");
+    }
+
+    @Test // Тест для покупки Sauce Labs Onesie
+    public void OnesieInCheckout() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickAddToCardOnesie();
+        productsPage.ClickToLinkCheckout();
+        CheckoutPage checkoutPage = new CheckoutPage();
+        Assert.isTrue(checkoutPage.checkOnesieInCheckout(), "Onesie not found in checkout");
+    }
+
+    @Test // Тест на проверку сортировок по цене. Тест хайпрайс
+    public void checkSortHilo() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickToSortContainer();
+        productsPage.ClickSortHilo();
+        productsPage.checkSortHilo();
+        Assert.isTrue(productsPage.checkSortHilo(), "Sort isn`t hilo");
+    }
+
+    @Test // Тест на проверку сортировок по цене. Тест лоупрайс
+    public void checkSortLohi() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickToSortContainer();
+        productsPage.ClickSortLohi();
+        productsPage.checkSortLohi();
+        Assert.isTrue(productsPage.checkSortLohi(), "Sort isn`t lohi");
+    }
+
+    @Test // Тест для проверки функциональности удаления продукта из корзины
+    public void checkDeleteItemFromCheckout() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickAddToCardBackpack();
+        productsPage.ClickToLinkCheckout();
+        CheckoutPage checkoutPage = new CheckoutPage();
+        checkoutPage.clickRemoveBackpack();
+        checkoutPage.checkNotVisibleBackPackInCheckout();
+    }
+
+    @Test // Тест для проверки функциональности логаута
+        public void logout() {
+        LoginPageSteps loginPageSteps = new LoginPageSteps();
+        loginPageSteps.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage();
+        productsPage.ClickBurgerMenu();
+        productsPage.ClickLogout();
+        LoginPage loginPage = new LoginPage();
+        Assert.isTrue(loginPage.CheckVisibleLoginCredentials(), "Logout failed");
     }
 }
