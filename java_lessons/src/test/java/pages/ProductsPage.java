@@ -4,7 +4,6 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 
 import java.util.ArrayList;
 
@@ -78,7 +77,7 @@ public class ProductsPage extends BasePage {
                 .click();
     }
 
-    public void checkSortLohi() {
+    public boolean checkSortLohi() {
         ArrayList<Double> priceValues = new ArrayList<Double>();
         for (SelenideElement elementPrice : prices) {
             String priceText = elementPrice.getText().replace("$", "");
@@ -92,10 +91,10 @@ public class ProductsPage extends BasePage {
                 break;
             }
         }
-        Assert.assertTrue(isSorted, "Sort isn`t lohi");
+        return isSorted;
     }
 
-    public void checkSortHilo() {
+    public boolean checkSortHilo() {
         ArrayList<Double> priceValues = new ArrayList<Double>();
         for (SelenideElement elementPrice : prices) {
             String priceText = elementPrice.getText().replace("$", "");
@@ -109,6 +108,6 @@ public class ProductsPage extends BasePage {
                 break;
             }
         }
-        Assert.assertTrue(isSorted, "Sort isn`t hilo");
+        return isSorted;
     }
 }

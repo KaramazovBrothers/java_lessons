@@ -39,6 +39,7 @@ public class LoginTest extends BaseTest {
         productsPage.ClickToSortContainer();
         productsPage.ClickSortHilo();
         productsPage.checkSortHilo();
+        Assert.isTrue(productsPage.checkSortHilo(), "Sort isn`t hilo");
     }
 
     @Test // Тест на проверку сортировок по цене. Тест лоупрайс
@@ -49,6 +50,7 @@ public class LoginTest extends BaseTest {
         productsPage.ClickToSortContainer();
         productsPage.ClickSortLohi();
         productsPage.checkSortLohi();
+        Assert.isTrue(productsPage.checkSortLohi(), "Sort isn`t lohi");
     }
 
     @Test // Тест для проверки функциональности удаления продукта из корзины
