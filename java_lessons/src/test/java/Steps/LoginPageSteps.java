@@ -1,5 +1,7 @@
 package Steps;
 
+import PrepareData.PrepareRegistrationData;
+import models.LoginPageRegistrationModel;
 import pages.LoginPage;
 
 public class LoginPageSteps {
@@ -22,5 +24,23 @@ public class LoginPageSteps {
         loginPage.openPage();
         loginPage.inputPassword(password);
         loginPage.clickLogin();
+    }
+
+    public void fillInRegistrationFormFakeData(LoginPageRegistrationModel model) {
+        loginPage.inputEmail(model.getLogin());
+        loginPage.inputPassword(model.getPassword());
+    }
+
+    public void methodFake() {
+        fillInRegistrationFormFakeData(PrepareRegistrationData.getDataFake());
+    }
+
+    public void fillInRegiastrationFormRealData(LoginPageRegistrationModel model) {
+        loginPage.inputEmail(model.getLogin());
+        loginPage.inputPassword(model.getPassword());
+    }
+
+    public void methodReal() {
+        fillInRegiastrationFormRealData(PrepareRegistrationData.getWithDataFromLoginPage());
     }
 }
