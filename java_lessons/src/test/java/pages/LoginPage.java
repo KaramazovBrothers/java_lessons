@@ -52,7 +52,8 @@ public class LoginPage extends BasePage {
             String loginText = loginCreds.getText();
             loginCred.add(loginText);
         }
-        return getLogin();
+        int randomIndex = (int) (Math.random() * loginCred.size());
+        return loginCred.get(randomIndex);
     }
 
     //берём также массив, на случай, если список паролей будет расширяться
@@ -64,4 +65,6 @@ public class LoginPage extends BasePage {
         }
         return getPassword();
     }
+
+
 }
