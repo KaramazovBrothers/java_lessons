@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c4527ef-72ca-4903-9cfd-3d608772c1b7" name="Changes" comment="dataType">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_02_2023_23_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_02_2023_23_36__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_02_2023_17_44_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_02_2023_17_44__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrepareData/PrepareRegistrationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrepareData/PrepareRegistrationData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="Page_Objects" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -80,14 +78,16 @@
       <recent name="my.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.checkSortTest">
-    <configuration name="CalcTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestDataGenerator">
+    <configuration name="TestDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utilities.TestDataGenerator" />
       <module name="java_lessons" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="calc.CalcTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDataGenerator" />
+        <item itemvalue="TestNG.LoginTest.itemInCheckout" />
         <item itemvalue="TestNG.LoginTest.checkSortTest" />
         <item itemvalue="TestNG.LoginTest.checkSortLohiTest" />
         <item itemvalue="TestNG.LoginTest.checkSortLohi" />
-        <item itemvalue="TestNG.LoginTest.itemInCheckout" />
-        <item itemvalue="TestNG.CalcTest" />
       </list>
     </recent_temporary>
   </component>
