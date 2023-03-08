@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
     @Test // Тест для покупки Sauce Labs Onesie
     public void OnesieInCheckout() {
         LoginPageSteps loginPageSteps = new LoginPageSteps();
-        loginPageSteps.login("standard_user", "secret_sauce");
+        loginPageSteps.login(username, password); //использовали данные из property. Глянь в BaseTest
         ProductsPage productsPage = new ProductsPage();
         productsPage.ClickAddToCardOnesie();
         productsPage.ClickToLinkCheckout();
@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest {
     @Test // Тест на проверку сортировок по цене. Тест хайпрайс
     public void checkSortHilo() {
         LoginPageSteps loginPageSteps = new LoginPageSteps();
-        loginPageSteps.login("standard_user", "secret_sauce");
+        loginPageSteps.login(username, password); //использовали данные из property. Глянь в BaseTest
         ProductsPage productsPage = new ProductsPage();
         productsPage.ClickToSortContainer();
         productsPage.ClickSortHilo();
