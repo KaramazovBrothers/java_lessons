@@ -1,0 +1,25 @@
+{
+  "occupation": {
+    "1": "Angajat",
+    "2": "Antreprenor",
+    "3": "Pensionar",
+    "4": "Student",
+    "5": "Concediu de maternitate",
+    "8": "Liber profesionist"
+  },
+  "maritalStatus": {
+    "1": "Necăsătorit (ă)",
+    "2": "Căsătorit (ă)",
+    "3": "Divorțat (ă)",
+    "4": "Văduv (ă)",
+    "5": "Coabitare"
+  },
+  "education": {
+    "1": "St primare",
+    "2": "St gimnaziale",
+    "3": "Lyceum",
+    "4": "Studii universitare",
+    "5": "Studii post-universitare",
+    "6": "Nu am studii"
+  }
+}

@@ -65,6 +65,4 @@ public class LoginPage extends BasePage {
         }
         return getPassword();
     }
-
-
 }

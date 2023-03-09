@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c4527ef-72ca-4903-9cfd-3d608772c1b7" name="Changes" comment="dataType">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_02_2023_17_44_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_02_2023_17_44__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PrepareData/PrepareRegistrationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrepareData/PrepareRegistrationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GsonDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Page_Objects" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -78,9 +76,9 @@
       <recent name="my.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDataGenerator">
-    <configuration name="TestDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utilities.TestDataGenerator" />
+  <component name="RunManager" selected="Application.GsonDemo">
+    <configuration name="DeserializJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utilities.DeserializJson" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
@@ -92,61 +90,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkSortLohi" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FilesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utilities.FilesDemo" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenide_test.*" />
+          <option name="PATTERN" value="Utilities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenide_test" />
-      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
-      <option name="METHOD_NAME" value="checkSortLohi" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkSortLohiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GsonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utilities.GsonDemo" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenide_test.*" />
+          <option name="PATTERN" value="Utilities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenide_test" />
-      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
-      <option name="METHOD_NAME" value="checkSortLohiTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkSortTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pages.LoginPage" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenide_test.*" />
+          <option name="PATTERN" value="pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenide_test" />
-      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
-      <option name="METHOD_NAME" value="checkSortTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.itemInCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="selenide_test" />
       <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
-      <option name="METHOD_NAME" value="itemInCheckout" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDataGenerator" />
-        <item itemvalue="TestNG.LoginTest.itemInCheckout" />
-        <item itemvalue="TestNG.LoginTest.checkSortTest" />
-        <item itemvalue="TestNG.LoginTest.checkSortLohiTest" />
-        <item itemvalue="TestNG.LoginTest.checkSortLohi" />
+        <item itemvalue="Application.GsonDemo" />
+        <item itemvalue="Application.DeserializJson" />
+        <item itemvalue="Application.LoginPage" />
+        <item itemvalue="Application.FilesDemo" />
+        <item itemvalue="TestNG.LoginTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
