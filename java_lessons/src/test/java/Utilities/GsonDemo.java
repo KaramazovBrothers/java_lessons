@@ -1,5 +1,6 @@
 package Utilities;
 
+import JsonV2.IncludeAll;
 import PrepareData.PrepareRegistrationData;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,8 +51,19 @@ public class GsonDemo {
             e.printStackTrace();
         }
     }
+//Второй вариант исполнения
+
+    public static void objectFromJsonFileTwo() {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        try (FileReader reader = new FileReader("src/test/resources/forHomeWork.json")) {
+            IncludeAll includeAll = gson.fromJson(reader, IncludeAll.class);
+            System.out.println(gson.toJson(includeAll));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) {
-        objectFromJsonFile();
+        objectFromJsonFileTwo();
     }
 }
