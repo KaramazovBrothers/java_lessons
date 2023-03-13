@@ -2,10 +2,14 @@ package selenide_test;
 
 import Steps.LoginPageSteps;
 import dev.failsafe.internal.util.Assert;
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.ProductsPage;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class LoginTest extends BaseTest {
 
@@ -66,7 +70,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test // Тест для проверки функциональности логаута
-        public void logout() {
+    public void logout() {
         LoginPageSteps loginPageSteps = new LoginPageSteps();
         loginPageSteps.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage();
@@ -74,5 +78,50 @@ public class LoginTest extends BaseTest {
         productsPage.ClickLogout();
         LoginPage loginPage = new LoginPage();
         Assert.isTrue(loginPage.CheckVisibleLoginCredentials(), "Logout failed");
+    }
+
+    //Тест логина с невалидными параметрами
+    @Test(dataProvider = "InvalidLogindata")
+    public void dataProviderDemo(String email, String password) {
+        LoginPage loginPage = new LoginPage();
+        loginPage
+                .openPage()
+                .inputEmail(email)
+                .inputPassword(password)
+                .clickLogin();
+        Assert.isTrue(loginPage.CheckVisibleLoginCredentials(), "Negative Login Test is failed");
+    }
+
+    @DataProvider(name="InvalidLogindata")
+    public Object[][] Login() {
+        return new Object[][] {
+                {"Tratata", "666"},
+                {"",""},
+                {"", "666"}
+        };
+    }
+
+    //Тест логина с валидными параметрами. Данные логина и пароля из файла конфига
+    @Test
+    public void LoginTest() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.openPage();
+        loginPage.inputEmail(username);
+        loginPage.inputPassword(password);
+        loginPage.clickLogin();
+        ProductsPage productsPage = new ProductsPage();
+        Assert.isTrue(productsPage.checkHeader(), "Login is failed");
+    }
+
+    //Тест логина с валидными параметрами. Данные логина и пароля из конфигурации TestNG.
+    @Test
+    public void LoginTestWithTestNGConfig() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.openPage();
+        $(By.id("user-name")).sendKeys(System.getProperty("username"));
+        $(By.id("password")).sendKeys(System.getProperty("password"));
+        loginPage.clickLogin();
+        ProductsPage productsPage = new ProductsPage();
+        Assert.isTrue(productsPage.checkHeader(), "Login is failed");
     }
 }

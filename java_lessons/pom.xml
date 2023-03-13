@@ -12,7 +12,7 @@
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <testhg.version>7.6.1</testhg.version>
+        <testng.version>7.6.1</testng.version>
         <jackson.version>2.10.0</jackson.version>
         <suiteXmlFile>src/test/resources/smoke.xml</suiteXmlFile>
     </properties>
@@ -23,7 +23,7 @@
             <artifactId>selenide</artifactId>
             <version>6.11.0</version>
         </dependency>
-        <dependency>
+                <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>${testhg.version}</version>
+            <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -68,7 +68,6 @@
         </dependency>
 
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
