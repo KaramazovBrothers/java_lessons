@@ -1,11 +1,12 @@
 package calc;
 
+import Utilities.Retry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CalcTest {
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void sumTest() {
         Calc calc = new Calc();
         Assert.assertEquals(calc.sum(3, 3), 6, "Проверь операцию сложения");

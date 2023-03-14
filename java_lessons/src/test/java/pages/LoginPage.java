@@ -19,8 +19,9 @@ public class LoginPage extends BasePage {
     private static ElementsCollection loginValues = $$(By.xpath("//div[@id='login_credentials']/text()"));
     private static ElementsCollection passwordValues = $$(By.xpath("//div[@class='login_password']/text()"));
 
-    public void openPage () {
+    public LoginPage openPage() {
         open(LOGIN_URL);
+        return this;
     }
 
     public boolean CheckVisibleLoginCredentials() {
@@ -28,22 +29,25 @@ public class LoginPage extends BasePage {
                 .isDisplayed();
     }
 
-    public void inputEmail (String email) {
+    public LoginPage inputEmail(String email) {
         emailInputField
                 .shouldBe(visible)
                 .sendKeys(email);
+        return this;
     }
 
-    public void inputPassword(String password) {
+    public LoginPage inputPassword(String password) {
         passwordInputField
                 .shouldBe(visible)
                 .sendKeys(password);
+        return this;
     }
 
-    public void clickLogin() {
+    public LoginPage clickLogin() {
         loginButton
                 .shouldBe(enabled)
                 .click();
+        return this;
     }
 
     public static String getLogin() {
