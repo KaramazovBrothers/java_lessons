@@ -2,14 +2,11 @@ package selenide_test;
 
 import Steps.LoginPageSteps;
 import dev.failsafe.internal.util.Assert;
-import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.ProductsPage;
-
-import static com.codeborne.selenide.Selenide.$;
 
 public class LoginTest extends BaseTest {
 
@@ -118,8 +115,8 @@ public class LoginTest extends BaseTest {
     public void LoginTestWithTestNGConfig() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
-        $(By.id("user-name")).sendKeys(System.getProperty("username"));
-        $(By.id("password")).sendKeys(System.getProperty("password"));
+        loginPage.inputEmail(System.getProperty("username"));
+        loginPage.inputPassword(System.getProperty("password"));
         loginPage.clickLogin();
         ProductsPage productsPage = new ProductsPage();
         Assert.isTrue(productsPage.checkHeader(), "Login is failed");

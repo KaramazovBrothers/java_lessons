@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c4527ef-72ca-4903-9cfd-3d608772c1b7" name="Changes" comment="dataType">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_03_2023_22_03_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_03_2023_22_03__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/calc/CalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calc/CalcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenide_test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenide_test/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/smoke.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/smoke.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <recent name="my.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smokeSauseLab.xml">
+  <component name="RunManager" selected="TestNG.LoginTest.LoginTestWithTestNGConfig">
     <configuration name="C:/Develop/java_lessons/java_lessons/src/test/resources/smokeSauseLab.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_lessons" />
       <shortenClasspath name="NONE" />
@@ -160,6 +153,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.LoginTestWithTestNGConfig" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_lessons" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenide_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="selenide_test" />
+      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
+      <option name="METHOD_NAME" value="LoginTestWithTestNGConfig" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dusername=standard_user -Dpassword=secret_sauce" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.checkDeleteItemFromCheckout (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_lessons" />
       <shortenClasspath name="NONE" />
@@ -178,35 +200,6 @@
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dusername=standard_user -Dpassword=secret_sauce" />
       <option name="PARAMETERS" value="1" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.checkDeleteItemFromCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java_lessons" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenide_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="selenide_test" />
-      <option name="MAIN_CLASS_NAME" value="selenide_test.LoginTest" />
-      <option name="METHOD_NAME" value="checkDeleteItemFromCheckout" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-Dusername=standard_user -Dpassword=secret_sauce" />
-      <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -241,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.LoginTestWithTestNGConfig" />
         <item itemvalue="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smokeSauseLab.xml" />
         <item itemvalue="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smoke.xml" />
         <item itemvalue="TestNG.C:/Users/lawko/AppData/Local/JetBrains/IdeaIC2022.3/temp-testng-customsuite.xml" />
         <item itemvalue="TestNG.LoginTest.checkDeleteItemFromCheckout (1)" />
-        <item itemvalue="TestNG.LoginTest.checkDeleteItemFromCheckout" />
       </list>
     </recent_temporary>
   </component>
@@ -284,17 +277,17 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java</url>
-          <line>125</line>
+          <line>122</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java</url>
-          <line>92</line>
+          <line>89</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java</url>
-          <line>69</line>
+          <line>66</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
