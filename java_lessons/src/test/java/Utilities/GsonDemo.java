@@ -42,6 +42,7 @@ public class GsonDemo {
         System.out.println(lprm.toString());
     }
 
+    //Вариант работы с джейсоном избегая разбиения на классы
     public static void objectFromJsonFile() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (FileReader fr = new FileReader("src/test/resources/forHomeWork.json")) {
@@ -51,8 +52,8 @@ public class GsonDemo {
             e.printStackTrace();
         }
     }
-//Второй вариант исполнения
 
+    //Второй вариант исполнения
     public static void objectFromJsonFileTwo() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (FileReader reader = new FileReader("src/test/resources/forHomeWork.json")) {
@@ -64,6 +65,7 @@ public class GsonDemo {
     }
 
     public static void main(String[] args) {
-        objectFromJsonFileTwo();
+       // objectFromJsonFileTwo();
+        objectFromJsonFile();
     }
 }
