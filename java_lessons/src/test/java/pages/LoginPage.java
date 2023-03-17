@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static urls.WebUrls.LOGIN_URL;
 
+@Log4j2
 public class LoginPage extends BasePage {
     private SelenideElement emailInputField = $(By.id("user-name"));
     private SelenideElement passwordInputField = $(By.id("password"));
@@ -30,6 +32,8 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage inputEmail(String email) {
+        // Логировать креды не стоит. Используем тут в качестве примера
+        log.info("Send keys {} to field {}", email, emailInputField.toString());
         emailInputField
                 .shouldBe(visible)
                 .sendKeys(email);
