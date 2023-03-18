@@ -1,24 +1,26 @@
 package Utilities;
 
+import lombok.extern.log4j.Log4j2;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+@Log4j2
 public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println(String.format("Test %s Started", result.getName()));
+        log.info("Test {} Started", result.getName());
     }
 
     public void onTestSuccess(ITestResult result) {
-        System.out.println(String.format("Test %s Success", result.getName()));
+        log.info("Test {} Success", result.getName());
     }
 
     public void onTestFailure(ITestResult result) {
-        System.out.println(String.format("Test %s Failure", result.getName()));
+       log.info("Test {} Failure", result.getName());
     }
 
     public void onTestSkipped(ITestResult result) {
-        System.out.println(String.format("Test %s Skipped", result.getName()));
+        log.info("Test {} Skipped", result.getName());
     }
 }
