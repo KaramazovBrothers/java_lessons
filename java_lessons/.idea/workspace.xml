@@ -7,12 +7,6 @@
     <list default="true" id="0c4527ef-72ca-4903-9cfd-3d608772c1b7" name="Changes" comment="dataType">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/GsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/GsonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenide_test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenide_test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenide_test/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/smokeSauseLab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/smoke.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +73,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Develop\java_lessons\java_lessons\src\test\java" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Utilities" />
     </key>
@@ -86,13 +83,13 @@
       <recent name="my.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="GsonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utilities.GsonDemo" />
+  <component name="RunManager" selected="Application.executeStatement">
+    <configuration name="executeStatement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbconnection.executeStatement" />
       <module name="java_lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utilities.*" />
+          <option name="PATTERN" value="dbconnection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,11 +97,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Develop/java_lessons/java_lessons/src/test/resources/smokeSauseLab.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Develop/java_lessons/java_lessons/src/test/resources/smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_lessons" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/smokeSauseLab.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/smoke.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
@@ -122,15 +119,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Develop/java_lessons/java_lessons/src/test/resources/smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DBConnect.connectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_lessons" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/smoke.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dbconnection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="dbconnection" />
+      <option name="MAIN_CLASS_NAME" value="dbconnection.DBConnect" />
+      <option name="METHOD_NAME" value="connectionTest" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dusername=standard_user -Dpassword=secret_sauce" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -224,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.executeStatement" />
+        <item itemvalue="TestNG.DBConnect.connectionTest" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smoke.xml" />
         <item itemvalue="TestNG.LoginTest.LoginTestWithTestNGConfig" />
-        <item itemvalue="TestNG.C:/Develop/java_lessons/java_lessons/src/test/resources/smokeSauseLab.xml" />
-        <item itemvalue="Application.GsonDemo" />
       </list>
     </recent_temporary>
   </component>
