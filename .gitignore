@@ -14,7 +14,6 @@ replay_pid*
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-.idea/
 allure-results/
 
 # AWS User-specific
