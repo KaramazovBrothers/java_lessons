@@ -1,7 +1,7 @@
 package dbconnection;
 
 import lombok.SneakyThrows;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
