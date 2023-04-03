@@ -25,6 +25,14 @@ public class TestDataGenerator {
         return faker.name().firstName();
     }
 
+    public static String generateJobName() {
+        return faker.job().field();
+    }
+
+    public static String generateEmail() {
+        return faker.internet().emailAddress();
+    }
+
     public static String generatePassword() {
         return faker.bothify("????#####");
     }

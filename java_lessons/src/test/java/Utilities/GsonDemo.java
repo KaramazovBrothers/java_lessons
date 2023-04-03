@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.extern.log4j.Log4j2;
 import models.LoginPageRegistrationModel;
-import models.jsonHomework.JsonHomeWorkModel;
+import models.JsonHomeWorkModel;
 
 import java.io.FileReader;
 import java.io.FileWriter;
